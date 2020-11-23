@@ -1,0 +1,255 @@
+ 152  docker push motasuresh/newubuntu:1.2
+  153  docker exec -it --name sureshsk -p 8080:80 motasuresh/newubuntu
+  154  docker run exec -it --name sureshsk -p 8080:80 motasuresh/newubuntu
+  155  docker run exec -it --name sureshsk -p 8080:80 motasuresh/newubuntu:1.2
+  156  docker pull motasuresh/newubuntu
+  157  docker images
+  158  docker rm 49f39da972d4
+  159  docker rmi 49f39da972d4
+  160  docker images
+  161  docker pull motasuresh/newubuntu
+  162  docker images
+  163  docker run exec -it motasuresh/newubuntu
+  164  docker run exec -it motasuresh/newubuntu:1.2
+  165  docker login
+  166  docker pull motasuresh/newubuntu
+  167  docker pull motasuresh/newubuntu:latest
+  168  docker pull motasuresh/newubuntu
+  169  docker run -it newubuntu
+  170  docker run -it newubuntu:latest
+  171  docker run -it newubuntu:1.2
+  172  docker run -it motasuresh/newubuntu
+  173  docker images
+  174  docker commit 9d206aa1f9f5 motasuresh/ubuntuapache2=k
+  175  docker commit 9070e403fb7c motasuresh/ubuntuapache2
+  176  docker push 9070e403fb7c motasuresh/ubuntuapache2
+  177  docker commit 9070e403fb7c motasuresh/ubuntuapache2
+  178  docker login
+  179  docker commit 9070e403fb7c motasuresh/ubuntuapache2
+  180  docker commit 9d206aa1f9f5 motasuresh/ubuntuapache2
+  181  docker push 9d206aa1f9f5 motasuresh/ubuntuapache2
+  182  docker rmi 9d206aa1f9f5 9070e403fb7c 4e2eef94cd6b
+  183  docker images
+  184  docker attach 4e2eef94cd6b
+  185  docker run exec -it 4e2eef94cd6b --name suubuntu
+  186  docker run -it --name suubuntu -p8080:80 ubuntu:latest
+  187  docker run -it --name suubuntu -p 8080:80 ubuntu:latest
+  188  docker run -it --name suubuntu ubuntu:latest
+  189  docker run -it --name suubuntu ubuntu:lates1
+  190  docker run -it --name suubuntu 4e2eef94cd6b
+  191  docker run -it --name suubuntu5 4e2eef94cd6b
+  192  docker ps
+  193  docker rm 85880e4b0f21
+  194  docker rm -f 85880e4b0f21
+  195  docker run -it --name ubuntudeploy -p8080:80 4e2eef94cd6b
+  196  docke images
+  197  docker images
+  198  docker ps
+  199  docker rm -f e4f50a4927fc
+  200  docker ps
+  201  docker attach 963c7062acf0
+  202  docker run -it --name ubuntudeploy2 -p8080:80 4e2eef94cd6b
+  203  docker images
+  204  docker ps
+  205  docker rm -f 7c9dc9b2c5de 963c7062acf0 bc0c55239560
+  206  docker ps
+  207  clear
+  208  docker ps -a
+  209  clear
+  210  docker images
+  211  docker run -ti --name ubuntutest -p8080:80 ubuntu:latest
+  212  ip a
+  213  clear
+  214  docker images
+  215  docker run -it 4e2eef94cd6b
+  216  docker ps
+  217  docker commit bf5a606bf503 --name ubuntuchange
+  218  docker commit bf5a606bf503 motasuresh/ubuntuchange
+  219  docker images
+  220  docker push motasuresh/ubuntuchange:1.0
+  221  docker push motasuresh/ubuntuchange:latest
+  222  docker push motasuresh/ubuntuchange:tag1.1
+  223  docker push motasuresh/ubuntuchange:1.1
+  224  docker pull motasuresh/ubuntuchange
+  225  docker images
+  226  docker rmi 3b2f1c7c25ca
+  227  docker images
+  228  docker pull motasuresh/ubuntuchange
+  229  docker images
+  230  docker run exec -it --name ubun123 -p8080:80 3b2f1c7c25ca
+  231  docker run exec -it --name ubun123 -p8080:80 motasuresh/ubuntuchange
+  232  docker run -it --name ubun123 -p8080:80 motasuresh/ubuntuchange
+  233  docker images
+  234  docker ps
+  235  docker rm -f c16692f04850
+  236  docker ps
+  237  docker stop bf5a606bf503
+  238  cler
+  239  clear
+  240  ps a
+  241  pid docker
+  242  ip a
+  243  docker version
+  244  docker network ls
+  245  docker network inspect bridge
+  246  docker create --subnet 10.10.0.0/24 --gateway 10.10.0.1 suresh
+  247  docker network create --subnet 10.10.0.0/24 --gateway 10.10.0.1 suresh
+  248  docker network ls
+  249  docker network inspect suresh
+  250  docker images
+  251  docker run -ti --name susk --ip 10.10.0.10 --net suresh motasuresh/ubuntu                                                                                                             change
+  252  docker images
+  253  docker ps
+  254  docker attach fa94affbcdf8
+  255  docker ps
+  256  docker ps -a
+  257  clear
+  258  docker stop susk
+  259  docker network
+  260  docker network ls
+  261  docker network inspect suresh
+  262  clear
+  263  docker network --help
+  264  docker ps
+  265  docoker images
+  266  docker images
+  267  docker run -it motasuresh/ubuntuchange
+  268  docker network attach suresh motasuresh/ubuntuchange
+  269  docker network connect suresh motasuresh/ubuntuchange
+  270  docker -pqa
+  271  docker containers ls
+  272  docker container ls
+  273  docker network connect suresh 245bfecf479e
+  274  docker attach 245bfecf479e
+  275  docker network --help
+  276  docker network disconnect suresh 245bfecf479e
+  277  docker attach 245bfecf479e
+  278  docker network prune
+  279  docker network ls
+  280  docker images
+  281  ps -a
+  282  ps -ef
+  283  ps -ef | grep docker
+  284  ps -ef | grep "docker"
+  285  clear
+  286  ps -ef | grep "docker"
+  287  clear
+  288  docker ps
+  289  dh -f
+  290  df -h
+  291  cd /tmp
+  292  ls -ltr
+  293  df -h
+  294  clear
+  295  ls -ltr
+  296  du -sh * | sort -hr | head -n10
+  297  cd
+  298  du -sh * | sort -hr | head -n10
+  299  vi mahatma
+  300  cat mahatma
+  301  clear
+  302  truncate --size 0 mahatma
+  303  cat mahatma
+  304  ls -ltr
+  305  history ls -ltr
+  306  history
+  307  clear
+  308  apt-get install nmap
+  309  apt-get install telnet
+  310  telnet www.gogle.com 443
+  311  docker images
+  312  docker ps
+  313  docker run -it --name sksss --net none motasuresh/ubuntuchange
+  314  docker network inspect none
+  315  docker network ls
+  316  docker network create none --subnet 10.10.0.0/24 --gateway 10.10.0.1 mota                                                                                                             suresh/ubuntuchange
+  317  docker network create none --subnet 10.10.0.0/24 --gateway 10.10.0.1 245b                                                                                                             fecf479e
+  318  docker network create none --subnet 10.10.0.0/24 --gateway 10.10.0.1 sure                                                                                                             sh
+  319  docker network create none --subnet 10.10.0.0/24 --gateway 10.10.0.1 sure                                                                                                             shs
+  320  clear
+  321  docker network ls
+  322  docker network create --subnet 10.10.0.0/24 --gateway 10.10.0.1 sureshs
+  323  docker ps
+  324  docker network attach sureshs 245bfecf479e
+  325  docker network --help
+  326  docker network connect sureshs 245bfecf479e
+  327  docker exec -it 245bfecf479e
+  328  docker attach 245bfecf479e
+  329  docker network disconnect sureshs 245bfecf479e
+  330  docker attach 245bfecf479e
+
+Management Commands:
+  builder     Manage builds
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  engine      Manage the docker engine
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem <docker diff contname>
+  events      Get real time events from the server
+  exec        Run a command in a running container <docker exec -it containername command>
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE<docker tag imagename:tag newimagename:tag>
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers <docker update containername/id --restart always>
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+* docker login(once lodded in) default encrypted passwd location <.docker/config.json>
+to decode that <echo "bW90YXN1cmVzaDpTdXJlc2hAMTQz" | base64 --decode> use this tool
+
+docker build -t motasuresh/sur -f /path/Dockerfile or . if currnet
+
+volume:
+
+<docker run -dti --name containername --mount source=volumenameyoucreated,target=/pathwheretomount imagename:latest>  
+
+RESTART CONTAINER ONCE STOPPED OR DROPPED:
+<docker run -dit --restart unless-stopped httpd> unless it was manually stopped container restarts
+on,on-failure,always,unless-stopped.
+
+
+
